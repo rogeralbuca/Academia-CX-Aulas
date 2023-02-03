@@ -1,0 +1,72 @@
+VS Code Snippets
+https://snippet-generator.app/?description=&tabtrigger=&snippet=%3C%21DOCTYPE+html%3E%0A%3Chtml+lang%3D%22en%22%3E%0A%3Chead%3E%0A++++%3Cmeta+charset%3D%22UTF-8%22%3E%0A++++%3Cmeta+http-equiv%3D%22X-UA-Compatible%22+content%3D%22IE%3Dedge%22%3E%0A++++%3Cmeta+name%3D%22viewport%22+content%3D%22width%3Ddevice-width%2C+initial-scale%3D1.0%22%3E%0A++++%3Ctitle%3EJavaScript+-+Academia+CX+-+NTT+Data+Business+Solutions%3C%2Ftitle%3E%0A++++%3Cstyle%3E++++++++%0A++++%3C%2Fstyle%3E%0A%3C%2Fhead%3E%0A%3Cbody%3E%0A++++%3Cscript%3E%0A++++%3C%2Fscript%3E%0A%3C%2Fbody%3E%0A%3C%2Fhtml%3E&mode=vscode
+
+Locaweb
+http://opensource.locaweb.com.br/locawebstyle-v2/manual/praticas-padroes/javascript/
+
+- Sintaxe: para separaçao dos blocos de código, utilizamos o estilo1TBS,
+
+-  "one true brace style" (abbreviated as 1TBS or OTBS[7]) is very similar to K&R.
+
+- Ao utilizar "use strict"; no início de códigos ou funções, declara-se uma mudança na sintaxe do Javascript, 
+que lança mais exceções mostrando problemas no código. Os erros mais comuns são uso de palavras reservadas do 
+javascript (ECMAScript 5 e 6), uso de variáveis não declaradas e uso de funções descontinuadas.
+
+- Nomenclatura de pastas, arquivos, módulos e plugins
+
+── javascripts
+    ├── libs
+    │   ├── jquery.min.js
+    │   └── underscore.min.js
+    │   └── highcharts.min.js
+    ├── plugins
+    │   ├── jquery.validate-1.2.js
+    │   ├── jquery.slider-3.1.js
+    │   └── jquery.validate.addicional-methods-0.8.js
+    ├── modules
+    │   ├── charts
+    │   |   ├── servers.js
+    │   |   └── transfer.js
+    │   ├── servers.js
+    │   └── servers.forms.js
+    ├── utils.js
+    └── main.js
+
+- Não reinvente a roda
+Use bibliotecas e frameworks estáveis, que possuem estrutura conhecida.
+Antes de inserir libraries e plugins, verifique a real necessidade, o suporte e compatibilidade.
+
+- Código de desenvolvimento não é código de produção
+Compacte, remova comentários, concatene os javascripts antes de mandar para produção. Existem diversas ferramentas para isso, inclusive online. Tenha uma versão de desenvolvimento, normal, comentada e uma para o site em produção.
+
+iMasters
+https://imasters.com.br/front-end/javascript-dez-dicas-e-boas-praticas
+
+- JavaScript é considerado um “bloqueador de recursos" enquanto é analisado. Isso significa que a renderização do HTML é bloqueada enquanto o código JavaScript é analisado. Quando o navegador encontra um elemento script, seja seu conteúdo interno (inline) ou externo (src="arquivo.js"), todo o processo é colocado em espera até a finalização da requisição (em caso de arquivo externo) e execução desse conteúdo.
+
+- Esse comportamento pode ser problemático se nós carregarmos vários arquivos JavaScript em uma página, já que isso irá interferir no tempo de execução do primeiro evento de paint na página, mesmo que nosso documento HTML não dependa desses arquivos.
+
+- Felizmente, o elemento script tem dois atributos, async e defer, deixando a cargo do desenvolvedor um melhor controle de como e quando esses arquivos externos devem ser requisitados e executados.
+
+- O atributo async é usado para indicar ao navegador que o script pode ser executado assincronamente.
+
+<script async src="script.js">
+
+- O atributo defer diz ao navegador para executar o script apenas quando a análise do HTML estiver finalizada.
+
+<script defer src="script.js">
+
+Documentação
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Grammar_and_types
+
+JavaScript Coding Guidelines
+https://gist.github.com/antonrogov/1216380/21800f463af3d3a98e98083c4bc109e44f981ef4
+
+Douglas Crockford
+https://www.crockford.com/code.html
+
+Guidelines for styling JavaScript code examples
+https://developer.mozilla.org/en-US/docs/MDN/Writing_guidelines/Writing_style_guide/Code_style_guide/JavaScript
+
+Google JavaScript Style Guide
+https://google.github.io/styleguide/jsguide.html

@@ -1,0 +1,5 @@
+DOCUMENTAÇÃO
+https://developer.mozilla.org/pt-BR/docs/Web/API/Document_Object_Model/Introduction
+
+Truques de JavaScript DOM que você precisa conhecer
+https://www.youtube.com/watch?v=fQJ2nezkUEA

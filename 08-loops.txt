@@ -1,0 +1,8 @@
+DOCUMENTAÇÃO
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach
+
+DOCUMENTAÇÃO
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/for
+
+DOCUMENTAÇÃO
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for-await...of

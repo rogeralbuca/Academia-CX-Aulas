@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript - Academia CX - NTT Data Business Solutions</title>
+    <style>        
+    </style>
+</head>
+<body>
+    <script>
+
+        console.log('>>>>> Classes:')
+
+        class Developer {
+            constructor(firstname, lastname) {
+                this.firstname = firstname
+                this.lastname = lastname
+            }
+
+            getName() {
+                return this.firstname + ' ' + this.lastname;
+            }
+        }
+
+        class CommerceDeveloper extends Developer {
+            getJob() {
+                return 'Commerce Developer'
+            }
+        }
+
+        var dev = new Developer('Thiago', 'Oliveira');
+
+        var me = new CommerceDeveloper('Roger', 'Albuquerque');
+
+        console.log(dev.getName());
+        console.log(me.getName());
+        console.log(me.getJob());
+        
+        console.log(typeof(dev));
+        console.log(dev);
+        console.log(typeof(me));
+        console.log(me);
+
+        class Rectangle {
+            constructor(height, width) {
+                this.height = height;
+                this.width = width;
+            }
+
+            get area() {
+                return this.calcArea();
+            }
+
+            calcArea() {
+                return this.height * this.width;
+            }
+
+            *getSides() {
+                yield this.height;
+                yield this.width;
+                yield this.height;
+                yield this.width;
+            }
+        }
+
+        const square = new Rectangle(10, 15);
+
+        console.log(square.area);
+        console.log([...square.getSides()]);
+
+    </script>
+</body>
+</html>

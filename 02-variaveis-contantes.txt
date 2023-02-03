@@ -1,0 +1,5 @@
+---
+
+var, let e const – Qual é a diferença?
+
+https://www.freecodecamp.org/portuguese/news/var-let-e-const-qual-e-a-diferenca/#:~:text=Vari%C3%A1veis%20de%20var%20podem%20ser%20atualizadas%20e%20declaradas%20novamente%20dentro,o%20topo%20de%20seu%20escopo.

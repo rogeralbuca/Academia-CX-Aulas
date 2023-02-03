@@ -1,0 +1,25 @@
+DOCUMENTAÇÃO
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/map
+
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/filter
+
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce
+
+
+- Como usar map Reduce?
+O que reduce() faz: como map() , reduce() percorre o array da esquerda para a direita invocando uma função de retorno 
+em cada elemento. O valor retornado é o valor acumulado passado de callback para callback. 
+Depois de todos os elementos terem sido avaliados, reduce() retorna o valor acumulado/concatenado.
+
+- Para que serve o map ()?
+O método map() invoca a função callback passada por argumento para cada elemento do Array e devolve um novo Array como resultado. 
+De uma forma mais amigável, o map() executa uma função de transformação em todos os elementos de uma determinada lista , 
+e retorna uma nova lista como resultado.
+
+Como funciona a função filter?
+Filter pode ser usado apenas para filtrar linhas ou colunas de uma só vez. Para filtrar linhas e colunas, 
+use o valor de retorno de uma função FILTER como intervalo em outra. Se FILTER não encontrar valores que satisfaçam as 
+condições fornecidas, #N/A será retornado.
+
+
+

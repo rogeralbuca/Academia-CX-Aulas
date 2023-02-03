@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript - Academia CX - NTT Data Business Solutions</title>
+    <style> 
+        .container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+        }
+        
+        .lampada {
+            width: 500px;
+            height: 500px;
+            background-image: url("lampada.jpg");
+        }
+
+        .lampada-on {
+            width: 500px;
+            height: 500px;
+            background-image: url("lampada-on.jpg");
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Container de manipulação de dom das imagens -->
+    <div class="container" id="container">
+        <!-- <div id="lampadaA" class="lampada">
+        </div> -->
+        <img id="lampadaB" src="lampada.jpg">
+    </div>
+
+    <script>
+        var lampadaA = window.document.getElementById('lampadaA');
+
+        // lampadaA.onclick = function (event) {
+        //     event.target.classList.contains('lampada-on') ? lampadaA.classList.remove("lampada-on") : lampadaA.classList.add("lampada-on");
+        // }
+
+        var lampadaB = window.document.getElementById('lampadaB');
+
+        lampadaB.onclick = function (event) {
+            lampadaB.src.includes('lampada.jpg') ? lampadaB.src = 'lampada-on.jpg' : lampadaB.src = 'lampada.jpg';
+        }
+    </script>
+    
+</body>
+</html>

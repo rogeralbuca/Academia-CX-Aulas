@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript - Academia CX - NTT Data Business Solutions</title>
+</head>
+<body>
+    <script>
+
+        console.log('>>>>> Vetores:');
+
+        let frutas = ['maça', 'banana', 'laranja'];
+
+        console.log(frutas);
+
+        console.log(frutas.length);
+
+        console.dir(frutas);
+
+        console.dir(frutas[0]);
+
+        frutas[4] = 'limão';
+
+        frutas.push('jaca');
+
+        console.log(frutas);
+
+        let frutas2 = ['manga', 'uva'];
+
+        console.log(frutas.concat(frutas2));
+
+        let array = [1, false, { cor: 'azul' }, "Roger"];
+
+        console.log(array);
+
+        const carros = new Array("Saab", "Volvo", "BMW");
+
+        console.log(carros);
+
+        console.log(carros.sort());
+
+        console.log(Array.isArray(carros));
+
+        carros.pop();
+
+        console.log(carros);
+
+        carros.shift();
+
+        console.log(carros);
+
+        console.log('>>>>> Destructuring:');
+
+        let [f0, f1, f2] = ['Frase 00','Frase 01','Frase 02'];
+
+        console.log(f2);
+
+        [a, b, ...rest] = [1, 2, 3, 4, 5];
+
+        console.log(rest);
+
+        let x = [1, 2, 3, 4, 5];
+
+        let [y, z] = x;
+
+        console.log(y);
+
+        console.log(z);
+
+        var url = "http://www.vivo.com.br/produtos";
+
+        var parsedURL = /^(\w+)\:\/\/([^\/]+)\/(.*)$/.exec(url);
+
+        console.log(parsedURL);
+
+        var [url, protocol, host, route] = parsedURL;
+
+        console.log(url);
+
+        console.log(protocol);
+
+        console.log(host);
+
+        console.log(route);
+
+    </script>
+</body>
+</html>

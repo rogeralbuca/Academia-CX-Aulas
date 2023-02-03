@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 01</title>
+</head>
+
+<body>
+    <h1 id="myText"></h1>
+    <script>
+        //alert("Hello World JavaScript!");
+
+        //document.getElementById("myText").innerHTML = "Hello World JavaScript!";
+
+        //document.body.innerHTML = "Hello World JavaScript!";
+
+        //document.write("Hello World JavaScript!");
+
+        //console.log("Hello World JavaScript!");
+    </script>
+</body>
+
+</html>
+
+---
+
+Documentação
+
+https://developer.mozilla.org/pt-BR/docs/Web/API/Window/alert

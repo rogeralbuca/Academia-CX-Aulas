@@ -1,0 +1,5 @@
+Definindo Funções em Javascript
+https://blog.matheuscastiglioni.com.br/definindo-funcoes-em-javascript/
+
+Documentação
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Functions

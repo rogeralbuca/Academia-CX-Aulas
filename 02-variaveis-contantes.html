@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript - Academia CX - NTT Data Business Solutions</title>
+</head>
+<body>
+    <script>
+
+        console.log('>>>>> Var, Let, Const:');
+
+        var mensagem1 = "var";
+        let mensagem2 = "let";
+        const mensagem3 = "const";
+
+        console.log(mensagem1);
+        console.log(mensagem2);
+        console.log(mensagem3);
+
+        mensagem1 = "A keyword var foi modificada";
+        mensagem2 = "A keyword let foi modificada";
+        mensagem3 = "A constante foi modificada";
+        
+        console.log(mensagem1);
+        console.log(mensagem2);
+        console.log(mensagem3);
+
+        console.log('>>>>> Tipos:');
+
+        let typeA = "Hello";
+        let typeB = 1;
+        let typeC = true;
+        let typeD = {};
+        let typeE;
+        let typeF = 900719925124740999n;
+        let typeG = 3/0;
+        let typeH = 3/'A';
+        let typeI = [];
+        let typeJ = function () {};
+
+        console.log(typeof(typeA));
+        console.log(typeof(typeB));
+        console.log(typeof(typeC));
+        console.log(typeof(typeD));
+        console.log(typeof(typeE));
+        console.log(typeof(typeF));
+        console.log(typeG);
+        console.log(typeH);
+        console.log(typeof(typeI));
+        console.log(typeof(typeJ));
+
+        console.log('>>>>> Single quotes:');
+
+        let secondText = "world";
+
+        console.log('Hello');
+
+        console.log('>>>>> Double quotes:');
+
+        console.log("Hello");
+
+        console.log('>>>>> Backticks:');
+
+        console.log(`Hello`);
+
+        console.log('>>>>> Template literals:');
+
+        console.log(`Hello ${secondText}`);
+
+        console.log('>>>>> Concat:');
+
+        console.log("Hello" + " " + secondText);
+
+        console.log('>>>>> Data:');
+
+        console.log("Hello", "world");
+        
+        console.log("Hello", secondText);
+        
+    </script>
+</body>
+</html>

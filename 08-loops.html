@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript - Academia CX - NTT Data Business Solutions</title>
+</head>
+<body>
+    <script>
+
+        console.log('>>>>> For in, For of, ForEach:');
+
+        let carros = ["Saab", "Volvo", "BMW", "Fiat", "Volkswagen", "GM", "Hyundai"];
+
+        carros.forEach(function(iten) {
+            console.log(iten);
+        });
+
+        function myFunction(value, index, array) {
+            console.log(`${index} ${value}`); 
+        }
+
+        carros.forEach(myFunction); 
+
+        for(let iten of carros) {
+            console.log(iten);
+        }
+
+        for (var key in carros) {
+            console.log(key + ' ' + carros[key]);
+        }
+
+        for ( const [key, value] of Object.entries(carros) ) {
+            console.log(`${key} ${value}`)
+        }
+
+        for(i = 0; i < carros.length; i++) {
+            console.log(`${i} ${carros[i]}`);
+        }
+
+        console.log('>>>>> While:');
+
+        let numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9 , 10];
+
+        var a = 0;
+        while(a < 5) {
+            console.log('loop a: ' + a);
+            ++a;
+        }
+
+        var b = 0;
+        while(b < 5) {
+            console.log('loop b: ' + b);
+            b++;
+        }
+
+        var c = 0;
+        while(c < 5) {
+            if(c == 3) {
+                console.log('Saiu do loop'); 
+                break
+            };
+            console.log('loop c: ' + c);
+            c++;
+        }
+
+        var d = 0;
+        while(d < 15) {
+            if(d % 3 === 0 && d % 5 === 0) {
+                console.log('Multiplo de 3 e 5: ' + d);
+            } else if(d % 3 === 0) {
+                console.log('Multiplo de 3: ' + d);
+            } else if(d % 5 === 0) {
+                console.log('Multiplo de 5: ' + d);
+            }
+            d++;
+        }
+
+        console.log('>>>>> Do While:');
+
+        var resultado = '';
+
+        var i = 0;
+        
+        do {
+            i += 1;
+            resultado += i + ', ';
+        } while (i < 5);
+
+        console.log(resultado);
+
+    </script>
+</body>
+</html>

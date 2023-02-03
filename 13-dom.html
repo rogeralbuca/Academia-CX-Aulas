@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript - Academia CX - NTT Data Business Solutions</title>
+    <script src="https://unpkg.com/bowser@2.4.0/es5.js"></script>
+    <style>
+      html, body {
+          width: 100%;
+          height: 100%;
+          margin: 0;
+          padding: 0;
+      }
+      .container {
+          display: flex;
+          flex-wrap: wrap;
+      }
+      .box {
+          box-sizing: border-box;
+          padding: 1rem;
+          width: 50%;
+      }
+      .margin-button {
+        margin-left: 50px;
+      }
+    </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="box">
+      <form>
+        <p><b id="wellcome"></b></p>
+  
+        <p><b>label</b></p>
+        <select onChange="setBodyAttr('text', this.options[this.selectedIndex].value);">
+          <option value="blue">azul</option>
+          <option value="green">verde</option>
+          <option value="red">vermelho</option>
+        </select>
+  
+        <p><b>bgColor</b></p>
+        <select onChange="setBodyAttr('bgColor', this.options[this.selectedIndex].value);">
+          <option value="white">branco</option>
+          <option value="lightgrey">cinza</option>
+          <option value="red">vermelho</option>
+        </select>
+        
+        <p><b>link</b></p>
+        <select onChange="setBodyAttr('link', this.options[this.selectedIndex].value);">
+          <option value="blue">azul</option>
+          <option value="green">verde</option>
+          <option value="red">Vermelho</option>
+        </select>  
+  
+        <small><a href="#" id="amostra">(link)</a></small><br>
+      </form>
+      <form>
+        <p><b id="version">version</b></p>
+        <input type="button" value="version" onclick="ver()" />
+      </form>
+    </div>
+    <div class="box">
+
+      <form id="form-add">
+        <p><b>Adicionar item</b></p>
+    
+        <input id="input-add" placeholder="Adicionar Item">
+      
+        <button>Adicionar</button>
+      </form>
+      
+      <ul>
+      </ul>
+
+    </div>
+
+  </div>
+
+  <script>
+
+    var person = window.prompt('Digite seu nome:');
+
+    window.document.getElementById("wellcome").innerHTML = `${person}, seja bem vindo!`;
+
+    function setBodyAttr(attr, value){
+      if (window.document.body) { 
+        eval('window.document.body.'+ attr +'="' + value + '"') 
+      } else {
+          notSupported()
+      };
+    }
+
+    function ver() {
+      var result = window.bowser.getParser(window.navigator.userAgent);
+      var version = "You are using " + result.parsedResult.browser.name + " v" + result.parsedResult.browser.version + " on " + result.parsedResult.os.name;
+      
+      window.document.getElementById("version").innerHTML = version;
+    }
+
+    const form = document.querySelector('#form-add')
+    const ul = document.querySelector('ul')
+
+    form.onsubmit = function(event) {
+      event.preventDefault();
+
+      const input = form.querySelector('#input-add');
+      
+      const value = input.value;
+
+      if(value == "") return
+
+      const clone = document.createElement("li");
+      const span = document.createElement("span");
+      const button = document.createElement("button");
+      span.textContent = value;
+      button.classList.add("delete");
+      button.classList.add("margin-button");
+      button.innerText = "x"
+
+      clone.appendChild(span);
+      clone.appendChild(button);
+
+      ul.appendChild(clone);
+
+      input.value = ""; 
+    }
+
+    ul.onclick = function (event) {
+      if(event.target.classList.contains('delete')) {
+        if(confirm("Deseja deletar o item?")) {
+          event.target.parentElement.remove();
+        }
+      }
+    }
+    
+  </script>
+</body>
+</html>

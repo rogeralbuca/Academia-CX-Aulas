@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript - Academia CX - NTT Data Business Solutions</title>
+    <style>        
+    </style>
+</head>
+<body>
+    <script>
+
+        console.log(">>>>> Map - Filter - Reduce:");
+
+        var array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+        var map = array.map(a => `valor: ${a}`);
+
+        console.log('Map: ', map)
+
+        var filter = array.filter(a => a % 2 ? a : null);
+
+        console.log('Filter: ', filter)
+
+        var reduce = array.reduce((acumulador, valor) => acumulador + valor );
+
+        console.log('Reduce: ', reduce)
+
+        var idades = [10, 20, 13, 42, 51, 6, 76, 18, 29, 20];
+
+        var resultado = idades.reduce((acumulador, valor) => {
+            var faixa = valor >= 18 ? 'maiores' : 'menores';
+            acumulador[faixa].push(valor);
+            return acumulador;
+        }, { maiores: [], menores:[] });
+
+        console.log('Reduce: ', resultado);
+
+    </script>
+</body>
+</html>

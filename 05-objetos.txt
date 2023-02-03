@@ -1,0 +1,11 @@
+API DE CEP
+https://viacep.com.br/ws/53437430/json/
+
+XML
+https://www.w3schools.com/xml/xml_display.asp
+
+DOCUMENTACAO
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object
+
+W3SCHOOLS
+https://www.w3schools.com/js/js_objects.asp

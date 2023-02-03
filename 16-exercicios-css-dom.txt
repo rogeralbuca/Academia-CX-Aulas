@@ -1,0 +1,5 @@
+DOCUMENTAÇÃO
+https://developer.mozilla.org/pt-BR/docs/Web/API/Element/classList
+
+DOCUMENTAÇÃO
+https://developer.mozilla.org/pt-BR/docs/Web/API/Document/getElementById

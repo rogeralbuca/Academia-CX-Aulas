@@ -1,0 +1,6 @@
+
+Documentação
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
+
+Array documentação
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array

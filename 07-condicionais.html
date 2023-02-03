@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript - Academia CX - NTT Data Business Solutions</title>
+</head>
+<body>
+    <script>
+
+        console.log('>>>>> If, Else:');
+
+        let idade = 17;
+
+        const MAIOR_IDADE = '18';
+
+        if(idade >= '18') {
+            console.log('Você é maior de idade');
+        } else {
+            console.log('Você é menor de idade');
+        }
+
+        function maiorIdade(idade){
+            return idade >= MAIOR_IDADE;
+        }
+
+        console.log('>>>>> Switch case:');
+
+        function colorChanger(color) {
+            switch(color) {
+                case "red":
+                    console.log('%cA cor do texto foi modificada', 'background: #fff; color: red');
+                    break;
+                case "orange":
+                    console.log('%cA cor do texto foi modificada', 'background: #fff; color: orange');
+                    break;
+                case "yellow":
+                    console.log('%cA cor do texto foi modificada', 'background: #fff; color: yellow');
+                    break;
+                case "green":
+                    console.log('%cA cor do texto foi modificada', 'background: #fff; color: green');
+                    break;
+                case "blue":
+                    console.log('%cA cor do texto foi modificada', 'background: #fff; color: blue');
+                    break;
+                case "indigo":
+                    console.log('%cA cor do texto foi modificada', 'background: #fff; color: indigo');
+                    break;
+                case "violet":
+                    console.log('%cA cor do texto foi modificada', 'background: #fff; color: violet');
+                    break;
+                default:
+                    console.log('Cor não encontrada!');
+	
+            }
+        }
+
+        colorChanger('red');
+        colorChanger('orange');
+        colorChanger('yellow');
+        colorChanger('green');
+        colorChanger('blue');
+        colorChanger('indigo');
+        colorChanger('violet');
+        
+        colorChanger('teste');
+        colorChanger('verde');
+
+    </script>
+</body>
+
+</html>

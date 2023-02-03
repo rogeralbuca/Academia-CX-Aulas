@@ -1,0 +1,169 @@
+CSS - Cascading Stile Sheets (Folhas de Estilo em Cascata)
+
+CSS é a linguagem que usamos para estilizar um documento HTML.
+
+CSS descreve como os elementos HTML devem ser exibidos.
+
+EXERCICIO CSS
+https://www.w3schools.com/css/exercise.asp?filename=exercise_selectors1
+
+DOCUMENTAÇÃO
+https://www.w3schools.com/css/
+
+SINTAX BASICA
+
+seletor {
+    propriedade: valor;
+}
+
+SELETOR 
+tag em HTML que ter´a tal valor aplicado `aquela propriedade citada. Cada seletor
+possui mais de uma propriedade que pode vir a ser modificada e pode ser aplicado
+a uma classe. Ex: <p>, <body>, <h1>, <img>, ...
+
+PROPRIEDADE
+tributo que ser´a modificado ao receber tal valor. Ex: size, color, font,...
+
+VALOR 
+caracter´ıstica que a propriedade ir´a assumir. Ex: 3, red, tahoma. Quando os
+valores forem num´ericos, h´a a op¸c˜ao de determin´a-los em pixels, cent´ımetros ou
+porcentagens.
+
+PROPRIEDADES BASICAS
+
+- Cores
+
+p {color:red}
+
+- Plano de fundo
+
+body {
+    background-color: #FFFFFF; 
+    background-image: url("imagem.gif");
+    background-position: bottom right; 
+    background-repeat: no-repeat
+}
+
+- Texto
+
+h1 {
+    color: #DDA0DD;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+h2 {
+    color: #3366FF;
+    text-decoration: line-through;
+    text-transform: none;
+}
+p {
+    text-ident: 1cm;
+    line-height: 2px;
+    text-align: center;
+}
+
+- Fonte
+
+h1 {
+    color: #DDA0DD;
+    font-family: arial;
+    font-weight: bold;
+}
+h2 {
+    color: #3366FF;
+    font-family: arial;
+    font-variant: small-caps;
+}
+p.1 {
+    font-family: serif;
+    font-size: x-small;
+    font-style: italic;
+}
+p.2 {
+    font-family: sans-serif;
+    font-size: 90%;
+    font-style: oblique;
+}
+
+- Borda
+
+h1 {
+    border-width: thick;
+    border-style: dotted;
+    border-color: gold;
+}
+h2 {
+    border-width: 20px;
+    border-style: outset;
+    border-color: red;
+}
+p {
+    border-top-width: 1px;
+    border-style: dashed;
+    border-color: blue;
+}
+
+- Margin e Padding
+
+body {
+    margin-top: 100px;
+    margin-right: 40px;
+    margin-bottom: 10px;
+    margin-left: 70px;
+}
+p {
+    margin: 5px 50px 5px 50px;
+}
+
+- Lista
+
+ul.inside
+{
+    list-style-position: inside;
+}
+ul.outside
+{
+    list-style-position: outside;
+}
+ul.square
+{
+    list-style-type: square;
+}
+ul.uproman
+{
+    list-style-type: upper-roman;
+}
+
+
+- Tabela
+
+table.one
+{
+    table-layout: automatic;
+}
+table.two
+{
+    table-layout: fixed;
+}
+table.coll
+{
+    border-collapse: collapse;
+}
+table.sep
+{
+    border-collapse: separate;
+}
+table.sp1
+{
+    border-collapse: separate;
+    border-spacing: 20px;
+}
+table.sp2
+{
+    border-collapse: separate;
+    border-spacing: 40px 60px;
+}
+caption
+{
+    caption-side:left;
+}

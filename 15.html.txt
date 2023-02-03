@@ -1,0 +1,8 @@
+O que é HTML e qual sua funcionalidade?
+https://rockcontent.com/br/blog/html/
+
+DOCUMENTAÇÃO
+https://developer.mozilla.org/pt-BR/docs/Web/HTML
+
+DOCUMENTAÇÃO
+https://www.w3schools.com/html/default.asp

@@ -1,0 +1,13 @@
+DOCUMENTAÇÃO
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators
+
+DOCUMENTAÇÃO
+https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Math
+
+Operadores de comparação e lógicos são usados para testar verdadeiro ou falso.
+
+Existem apenas seis valores falsos em JavaScript: undefined, null, NaN, 0, "" (string vazia), false
+
+Operadores de comparação são usados em instruções lógicas para determinar igualdade ou diferença entre variáveis ou valores.
+
+Matemática em JavaScript, como podemos usar operadores e outros recursos para manipular com sucesso os números para fazer nosso lance.

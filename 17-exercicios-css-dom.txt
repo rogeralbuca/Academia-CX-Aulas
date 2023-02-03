@@ -1,0 +1,11 @@
+Image
+https://br.depositphotos.com/vector-images/sequ%C3%AAncia-de-anima%C3%A7%C3%A3o.html
+
+drawImage()
+https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/drawImage
+
+YELD
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Operators/yield
+
+GENERATORS
+https://betterprogramming.pub/how-to-transform-javascript-functions-into-memory-efficient-generators-e402af77cdc4
